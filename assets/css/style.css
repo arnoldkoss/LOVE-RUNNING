@@ -21,6 +21,9 @@
 
 /* header */
 header {background-color: lightcoral;}
+
+h1 {font-family: 'Oswald' , sans-serif;}
+
 /* main content */
 main {background-color: lightblue;
     /* make main element take any surplus space to push footer down */
