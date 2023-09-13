@@ -25,10 +25,14 @@ header {background-color: #ffffff;
         position: fixed;
         z-index: 99;
         width: 100%;
-        box-shadow: 0 2px 2px #3a3a3a;}
+        box-shadow: 0 2px 2px #3a3a3a;
+        display: flex;
+    justify-content: space-between;
+    align-items: baseline;}
 
    header a {text-decoration: none;
-            color: inherit;}     
+            color: inherit;
+        }     
 
 h1 {font-family: 'Oswald' , sans-serif;
     text-transform: uppercase;
@@ -50,9 +54,21 @@ h1 {font-family: 'Oswald' , sans-serif;
             padding: 0 1rem;
             left: 0;
             box-shadow: 0 2px 2px #3a3a3a;
-            display: none;}
-        
+            display: none;
+            top: 100%;}
 
+        /* nav toggle */
+                #nav-toggle:checked~nav {
+                    display: block;
+                }
+        
+                #nav-toggle {
+                    display: none;
+                }
+        
+                .nav-toggle-label {
+                    font-size: 2rem;
+                }
 /* main content */
 main {background-color: lightblue;
     /* make main element take any surplus space to push footer down */
